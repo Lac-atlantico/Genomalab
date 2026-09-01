@@ -188,8 +188,9 @@ section{padding:64px 0;}
   width:46px;height:46px;border-radius:50%;
   background:var(--green-light);color:var(--green-dark);
   display:flex;align-items:center;justify-content:center;
-  font-size:1.3rem;margin-bottom:14px;
+  flex-shrink:0;margin-bottom:14px;
 }
+.icon-badge .icon,.notice-icon .icon{display:block;}
 
 .service-card{
   background:var(--gray-50);
@@ -309,7 +310,9 @@ table.schedule td:first-child{font-weight:700;color:var(--navy-800);}
 .notice{
   background:var(--gray-50);border-left:4px solid var(--green);
   padding:16px 20px;border-radius:0 8px 8px 0;color:var(--navy-800);font-size:.95rem;
+  display:flex;align-items:flex-start;gap:12px;
 }
+.notice-icon{flex-shrink:0;color:var(--green-dark);margin-top:1px;}
 
 /* breadcrumb / page header */
 .page-hero{
@@ -319,6 +322,12 @@ table.schedule td:first-child{font-weight:700;color:var(--navy-800);}
     linear-gradient(120deg,var(--navy-900),var(--navy-700) 75%,var(--navy-600));
   background-size:22px 22px, auto;
   padding:46px 0;
+}
+.page-hero.page-hero-photo{
+  background:
+    linear-gradient(120deg,rgba(9,24,36,.88),rgba(9,32,41,.78) 60%,rgba(11,40,45,.72)),
+    url("../img/servicios-lab.jpg") center 42%/cover no-repeat;
+  padding:64px 0;
 }
 .page-hero .container{position:relative;z-index:1;}
 .page-hero .eyebrow{color:#9AC97E;font-weight:700;text-transform:uppercase;font-size:.8rem;letter-spacing:.12em;}
