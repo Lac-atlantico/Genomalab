@@ -292,6 +292,11 @@ table.schedule td:first-child{font-weight:700;color:var(--navy-800);}
   color:var(--white);
   padding:52px 0;text-align:center;
 }
+.cta-banner.cta-banner-photo{
+  background:
+    linear-gradient(120deg,rgba(9,24,36,.88),rgba(9,32,41,.82) 60%,rgba(11,40,45,.78)),
+    var(--cta-photo) center 40%/cover no-repeat;
+}
 .cta-banner h2{color:var(--white);margin-bottom:10px;}
 .cta-banner p{color:#C9D6DE;margin-bottom:26px;font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;}
 
