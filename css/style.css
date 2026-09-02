@@ -326,7 +326,7 @@ table.schedule td:first-child{font-weight:700;color:var(--navy-800);}
 .page-hero.page-hero-photo{
   background:
     linear-gradient(120deg,rgba(9,24,36,.88),rgba(9,32,41,.78) 60%,rgba(11,40,45,.72)),
-    url("../img/servicios-lab.jpg") center 42%/cover no-repeat;
+    var(--hero-photo) center 42%/cover no-repeat;
   padding:64px 0;
 }
 .page-hero .container{position:relative;z-index:1;}
